@@ -53,6 +53,10 @@
   -->
     <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
     <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -92,10 +96,6 @@
 
             <li>
               <a href="#project" class="navbar-link">Projects</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Blog</a>
             </li>
 
             <li>
@@ -385,16 +385,10 @@
           <div class="container">
             <div class="title-wrapper" data-reveal="top">
               <div>
-                <h2 class="h2 section-title" id="project-label">
-                  Latest Projects
-                </h2>
+                <h2 class="h2 section-title" id="project-label">My Projects</h2>
 
-                <p class="section-text">
-                  Check out some of my latest projects with creative ideas.
-                </p>
+                <p class="section-text"></p>
               </div>
-
-              <a href="#" class="btn btn-secondary">See All Projects</a>
             </div>
 
             <ul class="grid-list">
@@ -404,43 +398,49 @@
                   class="project-card project-card-1"
                   style="background-color: #f8f5fb"
                 >
-                  <div class="card-content" data-reveal="left">
-                    <p class="card-tag" style="color: #a07cc5">Web Design</p>
+                  <div
+                    class="row align-items-center justify-content-around mb-5 pb-5"
+                  >
+                    <div class="col-lg-4 mb-3">
+                      <p class="card-tag" style="color: #a07cc5">
+                        Mobile Design
+                      </p>
 
-                    <h3 class="h3 card-title">Snowlake Theme</h3>
+                      <h3 class="h3 card-title">
+                        User Experience (UX) untuk Aplikasi "Fight Stunting"
+                      </h3>
 
-                    <p class="card-text">
-                      Maecenas faucibus mollis interdum sed posuere consectetur
-                      est at lobortis. Scelerisque id ligula porta felis euismod
-                      semper. Fusce dapibus tellus cursus.
-                    </p>
+                      <p class="card-text">
+                        Aplikasi ini bertujuan untuk menyediakan sumber daya,
+                        informasi, dan alat untuk memerangi stunting pada
+                        anak-anak, khususnya di wilayah dimana masalah ini
+                        sering terjadi.
+                      </p>
 
-                    <a
-                      href=""
-                      class="btn-text"
-                      style="color: #a07cc5"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      <span class="span">See Project</span>
+                      <a
+                        href=""
+                        class="btn-text"
+                        style="color: #a07cc5"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        <span class="span">See Project</span>
 
-                      <ion-icon
-                        name="arrow-forward-outline"
-                        aria-hidden="true"
-                      ></ion-icon>
-                    </a>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                    <div class="col-lg-4">
+                      <img
+                        src="./assets/images/project-fight-stunting.png"
+                        loading="lazy"
+                        alt="Web Design"
+                        class="w-100 m-auto"
+                      />
+                    </div>
                   </div>
-
-                  <figure class="card-banner" data-reveal="right">
-                    <img
-                      src="./assets/images/project-1.png"
-                      width="650"
-                      height="370"
-                      loading="lazy"
-                      alt="Web Design"
-                      class="w-100"
-                    />
-                  </figure>
                 </div>
                 <div
                   class="modal fade"
@@ -453,7 +453,7 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">
-                          See
+                          View Project
                         </h1>
                         <button
                           type="button"
@@ -462,34 +462,76 @@
                           aria-label="Close"
                         ></button>
                       </div>
-                      <div class="modal-body p-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facere iure tempore iusto minus consectetur quae earum
-                        assumenda necessitatibus quasi, est vitae maiores
-                        consequatur, atque doloremque harum repellendus quidem,
-                        beatae aliquid ullam. Unde velit id, sunt mollitia
-                        corrupti aspernatur. Tempora, expedita? Labore, nisi
-                        magnam! Repellat quo suscipit distinctio illum,
-                        repellendus doloremque animi omnis eius! Dolore veniam
-                        eos dolorum ad quidem praesentium ipsum nam debitis
-                        officia? Temporibus nostrum deserunt nobis itaque quia
-                        vel fugiat. Facilis laudantium optio, eveniet molestias,
-                        et vero sapiente itaque ea corrupti, voluptatum
-                        mollitia? Velit, est! Sunt quas nisi voluptatum aliquam
-                        a ipsum ab ipsa! Vero, debitis molestiae blanditiis
-                        labore quasi quibusdam tenetur odit facilis fuga ipsa
-                        alias excepturi deserunt quas quos mollitia quam iure
-                        culpa voluptatibus voluptate. Asperiores pariatur earum
-                        dicta perspiciatis eum corrupti maiores deleniti
-                        corporis natus dolorum porro autem nulla iure, eaque
-                        impedit sequi a. Molestiae esse eos quidem unde saepe
-                        itaque possimus, hic blanditiis maiores ad, nemo sequi
-                        illum eum. Eius quasi aliquid, asperiores quam et magni
-                        maxime labore nam non libero consequatur odio nemo esse
-                        eligendi officiis itaque at alias voluptatum tempore in
-                        amet rem animi facilis doloremque. Repellendus
-                        dignissimos beatae magnam sunt eaque minus nihil
-                        architecto neque vel officiis! Hic illo nihil molestiae?
+                      <div class="modal-body p-4">
+                        <img
+                          src="./assets/images/project-fight-stunting.png"
+                          alt=""
+                          class="w-100 mb-4"
+                        />
+                        <h1 class="mb-4">
+                          User Experience (UX) untuk Aplikasi "Fight Stunting"
+                        </h1>
+                        <h2 class="text-primary">Perkenalan</h2>
+                        <b>• Tujuan</b>
+                        <p>
+                          Tujuan penelitian UX ini adalah untuk mengumpulkan
+                          wawasan tentang kebutuhan, perilaku, dan permasalahan
+                          pengguna yang terkait dengan aplikasi "Fight
+                          Stunting". Aplikasi ini bertujuan untuk menyediakan
+                          sumber daya, informasi, dan alat untuk memerangi
+                          stunting pada anak-anak, khususnya di wilayah dimana
+                          masalah ini sering terjadi.
+                        </p>
+                        <b>• Cakupan</b>
+                        <p>
+                          Penelitian ini akan mencakup wawancara pengguna,
+                          survei, pengujian kegunaan, dan analisis kompetitif
+                          untuk menginformasikan desain dan pengembangan
+                          aplikasi.
+                        </p>
+                        <h2 class="mt-4 text-primary">Pertanyaan Penelitian</h2>
+                        <ul>
+                          <li>
+                            • Apa tantangan utama yang dihadapi orang tua dan
+                            pengasuh dalam mencegah dan menangani stunting pada
+                            anak?
+                          </li>
+                          <li>
+                            • Fitur apa yang menurut pengguna paling berharga
+                            dalam aplikasi yang dirancang untuk memerangi
+                            stunting?
+                          </li>
+                          <li>
+                            • Bagaimana pengguna saat ini mengakses informasi
+                            dan sumber daya tentang gizi dan kesehatan anak?
+                          </li>
+                          <li>
+                            • Apa masalah kegunaan pada versi aplikasi saat ini
+                            (jika tersedia)?
+                          </li>
+                          <li>
+                            • Bagaimana cara meningkatkan aplikasi agar dapat
+                            memenuhi kebutuhan dan harapan pengguna dengan lebih
+                            baik?
+                          </li>
+                        </ul>
+                        <h2 class="mt-4 text-primary">Kesimpulan</h2>
+                        <p>
+                          Riset UX untuk aplikasi "Fight Stunting" akan
+                          memberikan wawasan berharga mengenai kebutuhan dan
+                          preferensi pengguna, membantu menciptakan aplikasi
+                          yang berpusat pada pengguna yang secara efektif
+                          mendukung upaya melawan stunting pada anak-anak.
+                          Dengan melibatkan pengguna sebenarnya dalam proses
+                          penelitian, kami dapat memastikan aplikasi dapat
+                          digunakan dan memberikan dampak.
+                        </p>
+                        <a
+                          href="https://www.figma.com/design/bUuJL2OtX1scmCTA9rIUUx/Portofolio?node-id=3-38&t=mKjm09ePwTE4ivSz-1"
+                          class="btn btn-primary px-5 mt-5 mb-3"
+                          target="_blank"
+                          >See in Figma</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -502,37 +544,38 @@
                   class="project-card project-card-2"
                   style="background-color: #f1f5fd"
                 >
-                  <div class="card-content" data-reveal="right">
-                    <p class="card-tag" style="color: #3f78e0">Mobile Design</p>
+                  <div class="row justify-content-around align-items-center">
+                    <div class="col-lg-4">
+                      <p class="card-tag" style="color: #3f78e0">
+                        Mobile Design
+                      </p>
 
-                    <h3 class="h3 card-title">Budget App</h3>
+                      <h3 class="h3 card-title">Budget App</h3>
 
-                    <p class="card-text">
-                      Maecenas faucibus mollis interdum sed posuere consectetur
-                      est at lobortis. Scelerisque id ligula porta felis euismod
-                      semper. Fusce dapibus tellus cursus.
-                    </p>
+                      <p class="card-text">
+                        Maecenas faucibus mollis interdum sed posuere
+                        consectetur est at lobortis. Scelerisque id ligula porta
+                        felis euismod semper. Fusce dapibus tellus cursus.
+                      </p>
 
-                    <a href="#" class="btn-text" style="color: #3f78e0">
-                      <span class="span">See Project</span>
+                      <a href="#" class="btn-text" style="color: #3f78e0">
+                        <span class="span">See Project</span>
 
-                      <ion-icon
-                        name="arrow-forward-outline"
-                        aria-hidden="true"
-                      ></ion-icon>
-                    </a>
+                        <ion-icon
+                          name="arrow-forward-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+                    <div class="col-lg-4">
+                      <img
+                        src="./assets/images/project-private-edu.png"
+                        loading="lazy"
+                        alt="Web Design"
+                        class="w-100"
+                      />
+                    </div>
                   </div>
-
-                  <figure class="card-banner" data-reveal="left">
-                    <img
-                      src="./assets/images/project-2.png"
-                      width="600"
-                      height="367"
-                      loading="lazy"
-                      alt="Web Design"
-                      class="w-100"
-                    />
-                  </figure>
                 </div>
               </li>
               <!-- end project second -->
@@ -624,59 +667,208 @@
 
         <section class="section contact" aria-label="contact" id="contact">
           <div class="container">
-            <div class="contact-card">
-              <div class="contact-content" data-reveal="left">
-                <div class="card-icon">
-                  <img
-                    src="./assets/images/icon-5.svg"
-                    width="44"
-                    height="44"
-                    loading="lazy"
-                    alt="envelop icon"
-                  />
+            <div class="card border-0" style="background-color: #fcf4f6">
+              <div class="card-body p-5 m-5">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-lg-4">
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/icon-5.svg"
+                        width="44"
+                        height="44"
+                        loading="lazy"
+                        alt="envelop icon"
+                      />
+                    </div>
+
+                    <h2 class="h2 section-title mb-5">
+                      If you like what you see, let's work together.
+                    </h2>
+                    <div class="d-flex align-items-center gap-3">
+                      <a
+                        href="mailto:desi.rf27@gmail.com
+                      ?subject=Hello%20Desi"
+                      >
+                        <i class="bx bxl-gmail h1 text-primary"></i>
+                      </a>
+                      <p class="mb-0 fs-2 text-primary">desi.rf27@gmail.com</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                      <a href="https://wa.me/083827254252" target="_blank">
+                        <i class="bx bxl-whatsapp h1 text-primary"></i>
+                      </a>
+                      <p class="mb-0 fs-2 text-primary">+62 8382 7254 252</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                      <a
+                        href="https://www.linkedin.com/in/desiramadha27/"
+                        target="_blank"
+                      >
+                        <i class="bx bxl-linkedin h1 text-primary"></i>
+                      </a>
+                      <p class="mb-0 fs-2 text-primary">
+                        Desi Ramadha Fitriani
+                      </p>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                      <a
+                        href="https://www.instagram.com/desiramadhaaa/"
+                        target="_blank"
+                      >
+                        <i class="bx bxl-instagram h1 text-primary"></i>
+                      </a>
+                      <p class="mb-0 fs-2 text-primary">desiramadhaaa</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7588.383254416864!2d110.31668430649462!3d-7.821434155355077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af8123af578eb%3A0x4027a76e352fc60!2sKasihan%2C%20Kec.%20Kasihan%2C%20Kabupaten%20Bantul%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1716881985327!5m2!1sid!2sid"
+                      width="100%"
+                      height="700"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                  <div class="col-lg-3">
+                    <blockquote
+                      class="instagram-media"
+                      data-instgrm-captioned
+                      data-instgrm-permalink="https://www.instagram.com/p/CrsBqBALt6r/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      data-instgrm-version="14"
+                      style="
+                        background: #fff;
+                        border: 0;
+                        border-radius: 3px;
+                        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                          0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                        margin: 1px;
+                        max-width: 540px;
+                        padding: 0;
+                        width: 99.375%;
+                        width: -webkit-calc(100% - 2px);
+                        width: calc(100% - 2px);
+                      "
+                    >
+                      <div style="padding: 16px">
+                        <a
+                          href="https://www.instagram.com/p/CrsBqBALt6r/?utm_source=ig_embed&amp;utm_campaign=loading"
+                          style="
+                            background: #ffffff;
+                            line-height: 0;
+                            padding: 0 0;
+                            text-align: center;
+                            text-decoration: none;
+                            width: 100%;
+                          "
+                          target="_blank"
+                        >
+                          <div
+                            style="
+                              display: flex;
+                              flex-direction: row;
+                              align-items: center;
+                            "
+                          >
+                            <div
+                              style="
+                                background-color: #f4f4f4;
+                                border-radius: 50%;
+                                flex-grow: 0;
+                                height: 40px;
+                                margin-right: 14px;
+                                width: 40px;
+                              "
+                            ></div>
+                            <div
+                              style="
+                                display: flex;
+                                flex-direction: column;
+                                flex-grow: 1;
+                                justify-content: center;
+                              "
+                            >
+                              <div
+                                style="
+                                  background-color: #f4f4f4;
+                                  border-radius: 4px;
+                                  flex-grow: 0;
+                                  height: 14px;
+                                  margin-bottom: 6px;
+                                  width: 100px;
+                                "
+                              ></div>
+                              <div
+                                style="
+                                  background-color: #f4f4f4;
+                                  border-radius: 4px;
+                                  flex-grow: 0;
+                                  height: 14px;
+                                  width: 60px;
+                                "
+                              ></div>
+                            </div>
+                          </div>
+                          <div style="padding: 19% 0"></div>
+                          <div
+                            style="
+                              display: block;
+                              height: 50px;
+                              margin: 0 auto 12px;
+                              width: 50px;
+                            "
+                          >
+                            <svg
+                              width="50px"
+                              height="50px"
+                              viewBox="0 0 60 60"
+                              version="1.1"
+                              xmlns="https://www.w3.org/2000/svg"
+                              xmlns:xlink="https://www.w3.org/1999/xlink"
+                            >
+                              <g
+                                stroke="none"
+                                stroke-width="1"
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <g
+                                  transform="translate(-511.000000, -20.000000)"
+                                  fill="#000000"
+                                >
+                                  <g>
+                                    <path
+                                      d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                                    ></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div style="padding-top: 8px">
+                            <div
+                              style="
+                                color: #3897f0;
+                                font-family: Arial, sans-serif;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 550;
+                                line-height: 18px;
+                              "
+                            >
+                              Lihat postingan ini di Instagram
+                            </div>
+                          </div>
+                          <div style="padding: 12.5% 0"></div>
+                           
+                        </p>
+                      </div>
+                    </blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                  </div>
                 </div>
-
-                <h2 class="h2 section-title">
-                  If you like what you see, let's work together.
-                </h2>
-
-                <p class="section-text">
-                  I bring rapid solutions to make the life of my clients easier.
-                  Have any questions? Reach out to me from this contact form and
-                  I will get back to you shortly.
-                </p>
               </div>
-
-              <form action="" class="contact-form" data-reveal="right">
-                <div class="input-wrapper">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name *"
-                    required
-                    class="input-field"
-                  />
-
-                  <input
-                    type="email"
-                    name="email_address"
-                    placeholder="Email *"
-                    required
-                    class="input-field"
-                  />
-                </div>
-
-                <textarea
-                  name="message"
-                  placeholder="Message *"
-                  required
-                  class="input-field"
-                ></textarea>
-
-                <button type="submit" class="btn btn-secondary">
-                  Send message
-                </button>
-              </form>
             </div>
           </div>
         </section>
@@ -689,7 +881,9 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="copyright">© 2022 codewithsadee. All rights reserved.</p>
+        <p class="copyright">
+          © 2024 Portofolio Desi Ramadha . All rights reserved.
+        </p>
 
         <ul class="social-list">
           <li>

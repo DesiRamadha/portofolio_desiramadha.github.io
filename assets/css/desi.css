@@ -22,3 +22,7 @@
   background-color: hsla(344, 53%, 62%, 1) !important;
   border-color: hsla(344, 53%, 62%, 1) !important;
 }
+
+.text-primary {
+  color: hsla(344, 53%, 62%, 1) !important;
+}
