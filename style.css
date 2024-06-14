@@ -1,0 +1,61 @@
+.hero {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50% 30% 0 40%;
+}
+.bg-img-hero {
+  background: linear-gradient(to left, transparent, pink);
+  padding: 24px;
+  border-radius: 50% 30% 0 40%;
+}
+.text-charcoal {
+  color: rgb(52 62 81);
+}
+.btn-pink {
+  background-color: hsla(344, 53%, 62%, 1);
+  border-color: hsla(344, 53%, 62%, 1);
+  color: white;
+}
+
+.btn-pink:hover {
+  background-color: rgb(190, 99, 124);
+  border-color: rgb(190, 99, 124);
+  color: white;
+}
+.btn-outline-pink {
+  color: hsla(344, 53%, 62%, 1);
+  border-color: hsla(344, 53%, 62%, 1);
+}
+
+.btn-outline-pink:hover {
+  background-color: hsla(344, 53%, 62%, 1);
+  border-color: hsla(344, 53%, 62%, 1);
+  color: white;
+}
+.project-1 {
+  background: #f8f5fb;
+}
+.text-p-1 {
+  color: #a07cc5 !important;
+}
+.project-2 {
+  background: #f1f5fd;
+}
+.text-p-2 {
+  color: #3f78e0;
+}
+.project-3 {
+  background-color: #fcf4f6;
+}
+.text-p-3 {
+  color: #d16b86;
+}
+.project-4 {
+  background-color: #f5faf7;
+}
+.text-p-4 {
+  color: #7cb798;
+}
+.text-pink {
+  color: rgb(190, 99, 124);
+}

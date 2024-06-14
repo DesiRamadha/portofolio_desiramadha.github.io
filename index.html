@@ -1,945 +1,863 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- 
-    - primary meta tags
-  -->
-    <title>
-      Desi Ramadha Fitriani - I'm User Interface Designer & Developer.
-    </title>
-    <meta
-      name="title"
-      content="Desi Ramadha Fitriani - I'm User Interface Designer & Developer."
-    />
-    <meta
-      name="description"
-      content="This is a personal portfolio html template made by codewithsadee"
-    />
-
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
-
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- 
-    - custom css link
-  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Desi Ramadha Fitriani</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/desi.css" />
-
-    <!-- 
-    - preload images
-  -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
-    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Favicon  -->
+    <link rel="icon" href="./assets/img/logo.png" />
   </head>
-
-  <body>
-    <!-- 
-    - #HEADER
-  -->
-
-    <header class="header" data-header>
+  <body id="#">
+    <nav class="navbar w-100 navbar-expand-lg bg-white fixed-top p-3">
       <div class="container">
-        <a href="#" class="logo">
-          <h1>Desi Ramadha Fitriani</h1>
-        </a>
-
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a href="#" class="logo">
-              <img width="64" height="24" alt="Desi home" />
-            </a>
-
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler
-            >
-              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-          </div>
-
-          <ul class="navbar-list">
-            <li>
-              <a href="#top" class="navbar-link">Home</a>
-            </li>
-
-            <li>
-              <a href="#about" class="navbar-link">About</a>
-            </li>
-
-            <li>
-              <a href="#project" class="navbar-link">Projects</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="navbar-link">Contact</a>
-            </li>
-          </ul>
-
-          <div class="wrapper">
-            <a href="mailto:info@email.com" class="contact-link"
-              >desi.rf27@email.com</a
-            >
-
-            <a href="tel:001234567890" class="contact-link"
-              >00 (123) 456 78 90</a
-            >
-          </div>
-
-          <ul class="social-list">
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-dribbble"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/logo.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block me-3 align-text-top"
+          />Desi Ramadha</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="overlay" data-nav-toggler data-overlay></div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ms-lg-3 ms-0">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item ms-lg-3 ms-0">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item ms-lg-3 ms-0">
+              <a class="nav-link" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item ms-lg-3 ms-0">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item ms-lg-3 ms-0">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <main>
-      <article>
-        <!-- 
-        - #HERO
-      -->
-
-        <section class="section hero" aria-label="home">
-          <div class="container">
-            <div class="hero-banner">
-              <div class="bg-img-desi-top">
-                <img
-                  src="./assets/images/desi.JPG"
-                  alt=""
-                  class="img-desi-top"
-                />
-              </div>
+    <div class="bg-light py-5" id="hero">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-4 my-5">
+            <div class="bg-img-hero" data-aos="fade-up">
+              <img src="./assets/img/desi.JPG" alt="" class="hero" />
             </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-up">
+            <h1 class="text-charcoal mb-4">
+              I'm User Interface Designer & Developer.
+            </h1>
+            <p class="fs-5 text-secondary mb-5">
+              Hello! I'm Desi Ramadha Fitriani, a freelance user interface
+              designer & developer based in Yogyakarta. I’m very passionate
+              about the work that I do.
+            </p>
+            <a
+              href="./assets/CV Desi Ramadha Fitriani.pdf"
+              target="_blank"
+              class="btn btn-pink p-3 px-4 rounded-5"
+              >Download CV</a
+            >
+            <a
+              href="https://wa.me/+6283827254252"
+              target="_blank"
+              class="btn btn-outline-pink ms-3 p-3 px-4 rounded-5"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="hero-content">
-              <h1
-                class="h1 hero-title"
-                data-reveal="top"
-                data-reveal-delay="0.5s"
-              >
-                I'm User Interface Designer & Developer.
-              </h1>
+    <!-- about -->
+    <div class="about container pt-5" id="about">
+      <div class="row align-items-center mt-5">
+        <div class="col-lg-6 pe-0 pe-lg-4 mb-4">
+          <h1 class="text-charcoal" data-aos="fade-up">About Me</h1>
+          <p class="fs-5 text-secondary" data-aos="fade-up">
+            Hello! I’m Desi, a passionate and dedicated UI/UX Engineer with 2
+            years of experience in designing and developing user-centric digital
+            experiences. My expertise lies in creating intuitive, visually
+            appealing, and functional interfaces that enhance user satisfaction
+            and engagement.
+          </p>
+        </div>
+        <div class="col-lg-6 ps-0 ps-lg-4 mb-4" data-aos="fade-up">
+          <div class="progres mb-3">
+            <div class="d-flex justify-content-between text-secondary">
+              <p>UI Design</p>
+              <p>70%</p>
+            </div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Example 4px high"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 7px"
+            >
+              <div
+                class="progress-bar"
+                style="width: 70%; background: #c7b1dd"
+              ></div>
+            </div>
+          </div>
+          <div class="progres mb-3" data-aos="fade-up">
+            <div class="d-flex justify-content-between text-secondary">
+              <p>UI UX Research</p>
+              <p>80%</p>
+            </div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Example 4px high"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 7px"
+            >
+              <div
+                class="progress-bar"
+                style="width: 80%; background: #8caeec"
+              ></div>
+            </div>
+          </div>
+          <div class="progres mb-3" data-aos="fade-up">
+            <div class="d-flex justify-content-between text-secondary">
+              <p>Figma</p>
+              <p>70%</p>
+            </div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Example 4px high"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 7px"
+            >
+              <div
+                class="progress-bar"
+                style="width: 85%; background: #b0d4c1"
+              ></div>
+            </div>
+          </div>
+          <div class="progres mb-3" data-aos="fade-up">
+            <div class="d-flex justify-content-between text-secondary">
+              <p>Adobe Ilustrator</p>
+              <p>35%</p>
+            </div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Example 4px high"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 7px"
+            >
+              <div
+                class="progress-bar"
+                style="width: 35%; background: #e3a6b6"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
 
-              <p
-                class="section-text"
-                data-reveal="top"
-                data-reveal-delay="0.75s"
-              >
-                Hello! I'm Desi, a freelance user interface designer & developer
-                based in Yogyakarta. I’m very passionate about the work that I
-                do.
-              </p>
-
-              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-                <a href="#" class="btn btn-primary">Download CV</a>
-
-                <a href="#" class="btn btn-secondary">Contact Me</a>
+    <!-- skill -->
+    <div id="skill" class="pt-5">
+      <h1 class="text-charcoal text-center my-5">Skills and Expertise</h1>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active bg-dark mt-5"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            class="bg-dark mt-5"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="./assets/img/ui-design.jpg"
+                      alt=""
+                      class="w-100 rounded"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="./assets/img/ui-ux research.jpg"
+                      alt=""
+                      class="w-100 rounded"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="./assets/img/figma for ui ux.jpg"
+                      alt=""
+                      class="w-100 rounded"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- 
-        - #ABOUT
-      -->
-
-        <section class="section about" aria-label="about" id="about">
-          <div class="container">
-            <div class="wrapper">
-              <div data-reveal="left">
-                <h2 class="h2 section-title">What I Do?</h2>
-
-                <p class="section-text">
-                  Duis mollis est commodo luctus nisi erat porttitor ligula,
-                  eget lacinia odio sem nec elit. Nullam quis risus eget urna
-                  mollis ornare vel. Nulla vitae elit libero, a pharetra augue.
-                  Praesent commodo cursus magna, vel scelerisque nisl.
-                </p>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="./assets/img/ux writing.jpg"
+                      alt=""
+                      class="w-100 rounded"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="./assets/img/ux research.jpg"
+                      alt=""
+                      class="w-100 rounded"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="./assets/img/ux design.jpg"
+                      alt=""
+                      class="w-100 rounded"
+                    />
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end skill -->
 
-              <ul class="progress-list" data-reveal="right">
-                <li class="progress-item">
-                  <div class="label-wrapper">
-                    <p>UI Design</p>
+    <!-- project -->
+    <div class="container py-5" id="project">
+      <h1 class="text-charcoal mb-5 mt-5" data-aos="fade-up">My Projects</h1>
 
-                    <span class="span">70 %</span>
-                  </div>
+      <!-- private edu -->
+      <div class="card project-2 mb-4 border-0" data-aos="fade-up">
+        <div class="card-body p-5">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 p-5">
+              <h6 class="text-p-2" data-aos="fade-up">MOBILE DESIGN</h6>
+              <h3 class="my-3 text-charcoal" data-aos="fade-up">Private Edu</h3>
+              <p class="text-secondary" data-aos="fade-up">
+                PrivateEdu adalah platform pendidikan inovatif yang dirancang
+                untuk memberikan pengalaman belajar yang dipersonalisasi bagi
+                siswa melalui bimbingan privat. Aplikasi ini menghubungkan siswa
+                dengan tutor yang berkualifikasi dalam berbagai mata pelajaran,
+                menawarkan penjadwalan yang fleksibel, pelajaran interaktif, dan
+                pelacakan kemajuan untuk meningkatkan pengalaman belajar.
+              </p>
+              <a
+                href=""
+                class="text-decoration-none text-p-2"
+                data-aos="fade-up"
+                data-bs-toggle="modal"
+                data-bs-target="#project-edu-private"
+                >See Project >></a
+              >
+            </div>
+            <div class="col-lg-5">
+              <img
+                src="./assets/img/project-private-edu.png"
+                class="rounded w-100"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
-                  <div class="progress">
-                    <div
-                      class="progress-fill"
-                      style="width: 70%; background-color: #c7b1dd"
-                    ></div>
-                  </div>
+      <!-- modal edu-private -->
+      <div
+        class="modal fade"
+        id="project-edu-private"
+        tabindex="-1"
+        aria-labelledby="project-edu-private"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Edu Private
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h1 class="mb-3">Case Study: Aplikasi PrivateEdu</h1>
+              <img
+                src="./assets/img/project-private-edu.png"
+                class="rounded w-100"
+                alt=""
+              />
+              <h5>Overview</h5>
+              <p class="text-secondary">
+                PrivateEdu adalah platform pendidikan inovatif yang dirancang
+                untuk memberikan pengalaman belajar yang dipersonalisasi bagi
+                siswa melalui bimbingan privat. Aplikasi ini menghubungkan siswa
+                dengan tutor yang berkualifikasi dalam berbagai mata pelajaran,
+                menawarkan penjadwalan yang fleksibel, pelajaran interaktif, dan
+                pelacakan kemajuan untuk meningkatkan pengalaman belajar.
+              </p>
+              <h5>Objektif</h5>
+              <ul>
+                <li class="text-secondary">
+                  Menyediakan platform sebagai tempat / wadah bagi para murid
+                  dan juga tutor les privat untuk berkomunikasi.
                 </li>
-
-                <li class="progress-item">
-                  <div class="label-wrapper">
-                    <p>UX Research</p>
-
-                    <span class="span">80 %</span>
-                  </div>
-
-                  <div class="progress">
-                    <div
-                      class="progress-fill"
-                      style="width: 80%; background-color: #8caeec"
-                    ></div>
-                  </div>
-                </li>
-
-                <li class="progress-item">
-                  <div class="label-wrapper">
-                    <p>Figma</p>
-
-                    <span class="span">85 %</span>
-                  </div>
-
-                  <div class="progress">
-                    <div
-                      class="progress-fill"
-                      style="width: 85%; background-color: #b0d4c1"
-                    ></div>
-                  </div>
-                </li>
-
-                <li class="progress-item">
-                  <div class="label-wrapper">
-                    <p>Adobe Ilustrator</p>
-
-                    <span class="span">35 %</span>
-                  </div>
-
-                  <div class="progress">
-                    <div
-                      class="progress-fill"
-                      style="width: 35%; background-color: #e3a6b6"
-                    ></div>
-                  </div>
+                <li class="text-secondary">
+                  Memfasilitasi para tutor les privat untuk menemukan muridnya.
                 </li>
               </ul>
+              <h5>Peran dalam Tim</h5>
+              <p class="text-secondary">
+                Saya adalah bagian dari tim rintisan dan bertanggung jawab atas
+                strategi pengalaman dan desain aplikasi PrivatEdu. Saya bekerja
+                sebagai UI designer, dimana menghasilkan rancangan prototype
+                design aplikasi yang mudah digunakan oleh user.
+              </p>
+              <h5>Design System</h5>
+              <p class="text-secondary">
+                Pada design sistem saya menggunakan colorhunt.co
+              </p>
+              <img src="./assets/img/colorhunt.png" alt="" class="w-100" />
+              <p class="text-secondary">
+                Pemberian warna biru terang pada design aplikasi ini karena hal
+                positif yang ingin disampaikan kepada pengguna, Kepercayaan dan
+                Kredibilitas, Ketenangan dan Konsentrasi, Modern dan Segar,
+                Asosiasi dengan Teknologi dan Inovasi, Keterbacaan dan Kontras.
+                Pemilihan warna yang tepat adalah bagian penting dari desain
+                UI/UX yang berhasil, karena dapat mempengaruhi perasaan dan
+                persepsi pengguna terhadap aplikasi tersebut.
+              </p>
+              <img
+                src="./assets/img/UI Design Portof.png"
+                alt=""
+                class="w-100"
+              />
             </div>
-
-            <ul class="grid-list">
-              <li data-reveal="bottom">
-                <div class="about-card">
-                  <div class="card-icon">
-                    <!-- <img
-                      src="./assets/images/icon-1.svg"
-                      width="52"
-                      height="52"
-                      loading="lazy"
-                      alt="web design icon"
-                    /> -->
-                  </div>
-
-                  <h3 class="h4 card-title">UI Design</h3>
-
-                  <p class="card-text">
-                    Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                    mi porta gravida at eget metus. Cras justo cum sociis
-                    natoque magnis.
-                  </p>
-                </div>
-              </li>
-
-              <li data-reveal="bottom" data-reveal-delay="0.25s">
-                <div class="about-card">
-                  <div class="card-icon">
-                    <!-- <img
-                      src="./assets/images/icon-2.svg"
-                      width="52"
-                      height="52"
-                      loading="lazy"
-                      alt="mobile design icon"
-                    /> -->
-                  </div>
-
-                  <h3 class="h4 card-title">UX Research</h3>
-
-                  <p class="card-text">
-                    Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                    mi porta gravida at eget metus. Cras justo cum sociis
-                    natoque magnis.
-                  </p>
-                </div>
-              </li>
-
-              <li data-reveal="bottom" data-reveal-delay="0.5s">
-                <div class="about-card">
-                  <div class="card-icon">
-                    <!-- <img
-                      src="./assets/images/icon-3.svg"
-                      width="52"
-                      height="52"
-                      loading="lazy"
-                      alt="web development icon"
-                    /> -->
-                  </div>
-
-                  <h3 class="h4 card-title">Figma</h3>
-
-                  <p class="card-text">
-                    Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                    mi porta gravida at eget metus. Cras justo cum sociis
-                    natoque magnis.
-                  </p>
-                </div>
-              </li>
-
-              <li data-reveal="bottom" data-reveal-delay="0.75s">
-                <div class="about-card">
-                  <div class="card-icon">
-                    <!-- <img
-                      src="./assets/images/icon-4.svg"
-                      width="52"
-                      height="52"
-                      loading="lazy"
-                      alt="web seo icon"
-                    /> -->
-                  </div>
-
-                  <h3 class="h4 card-title">Adobe Ilustrator</h3>
-
-                  <p class="card-text">
-                    Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                    mi porta gravida at eget metus. Cras justo cum sociis
-                    natoque magnis.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- 
-        - #PROJECT
-      -->
-
-        <section
-          class="section project"
-          aria-labelledby="project-label"
-          id="project"
-        >
-          <div class="container">
-            <div class="title-wrapper" data-reveal="top">
-              <div>
-                <h2 class="h2 section-title" id="project-label">My Projects</h2>
-
-                <p class="section-text"></p>
-              </div>
-            </div>
-
-            <ul class="grid-list">
-              <!-- project first -->
-              <li>
-                <div
-                  class="project-card project-card-1"
-                  style="background-color: #f8f5fb"
-                >
-                  <div
-                    class="row align-items-center justify-content-around mb-5 pb-5"
-                  >
-                    <div class="col-lg-4 mb-3">
-                      <p class="card-tag" style="color: #a07cc5">
-                        Mobile Design
-                      </p>
-
-                      <h3 class="h3 card-title">
-                        User Experience (UX) untuk Aplikasi "Fight Stunting"
-                      </h3>
-
-                      <p class="card-text">
-                        Aplikasi ini bertujuan untuk menyediakan sumber daya,
-                        informasi, dan alat untuk memerangi stunting pada
-                        anak-anak, khususnya di wilayah dimana masalah ini
-                        sering terjadi.
-                      </p>
-
-                      <a
-                        href=""
-                        class="btn-text"
-                        style="color: #a07cc5"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                      >
-                        <span class="span">See Project</span>
-
-                        <ion-icon
-                          name="arrow-forward-outline"
-                          aria-hidden="true"
-                        ></ion-icon>
-                      </a>
-                    </div>
-                    <div class="col-lg-4">
-                      <img
-                        src="./assets/images/project-fight-stunting.png"
-                        loading="lazy"
-                        alt="Web Design"
-                        class="w-100 m-auto"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
-                          View Project
-                        </h1>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body p-4">
-                        <img
-                          src="./assets/images/project-fight-stunting.png"
-                          alt=""
-                          class="w-100 mb-4"
-                        />
-                        <h1 class="mb-4">
-                          User Experience (UX) untuk Aplikasi "Fight Stunting"
-                        </h1>
-                        <h2 class="text-primary">Perkenalan</h2>
-                        <b>• Tujuan</b>
-                        <p>
-                          Tujuan penelitian UX ini adalah untuk mengumpulkan
-                          wawasan tentang kebutuhan, perilaku, dan permasalahan
-                          pengguna yang terkait dengan aplikasi "Fight
-                          Stunting". Aplikasi ini bertujuan untuk menyediakan
-                          sumber daya, informasi, dan alat untuk memerangi
-                          stunting pada anak-anak, khususnya di wilayah dimana
-                          masalah ini sering terjadi.
-                        </p>
-                        <b>• Cakupan</b>
-                        <p>
-                          Penelitian ini akan mencakup wawancara pengguna,
-                          survei, pengujian kegunaan, dan analisis kompetitif
-                          untuk menginformasikan desain dan pengembangan
-                          aplikasi.
-                        </p>
-                        <h2 class="mt-4 text-primary">Pertanyaan Penelitian</h2>
-                        <ul>
-                          <li>
-                            • Apa tantangan utama yang dihadapi orang tua dan
-                            pengasuh dalam mencegah dan menangani stunting pada
-                            anak?
-                          </li>
-                          <li>
-                            • Fitur apa yang menurut pengguna paling berharga
-                            dalam aplikasi yang dirancang untuk memerangi
-                            stunting?
-                          </li>
-                          <li>
-                            • Bagaimana pengguna saat ini mengakses informasi
-                            dan sumber daya tentang gizi dan kesehatan anak?
-                          </li>
-                          <li>
-                            • Apa masalah kegunaan pada versi aplikasi saat ini
-                            (jika tersedia)?
-                          </li>
-                          <li>
-                            • Bagaimana cara meningkatkan aplikasi agar dapat
-                            memenuhi kebutuhan dan harapan pengguna dengan lebih
-                            baik?
-                          </li>
-                        </ul>
-                        <h2 class="mt-4 text-primary">Kesimpulan</h2>
-                        <p>
-                          Riset UX untuk aplikasi "Fight Stunting" akan
-                          memberikan wawasan berharga mengenai kebutuhan dan
-                          preferensi pengguna, membantu menciptakan aplikasi
-                          yang berpusat pada pengguna yang secara efektif
-                          mendukung upaya melawan stunting pada anak-anak.
-                          Dengan melibatkan pengguna sebenarnya dalam proses
-                          penelitian, kami dapat memastikan aplikasi dapat
-                          digunakan dan memberikan dampak.
-                        </p>
-                        <a
-                          href="https://www.figma.com/design/bUuJL2OtX1scmCTA9rIUUx/Portofolio?node-id=3-38&t=mKjm09ePwTE4ivSz-1"
-                          class="btn btn-primary px-5 mt-5 mb-3"
-                          target="_blank"
-                          >See in Figma</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- end project first -->
-              <!-- project second -->
-              <li>
-                <div
-                  class="project-card project-card-2"
-                  style="background-color: #f1f5fd"
-                >
-                  <div class="row justify-content-around align-items-center">
-                    <div class="col-lg-4">
-                      <p class="card-tag" style="color: #3f78e0">
-                        Mobile Design
-                      </p>
-
-                      <h3 class="h3 card-title">Budget App</h3>
-
-                      <p class="card-text">
-                        Maecenas faucibus mollis interdum sed posuere
-                        consectetur est at lobortis. Scelerisque id ligula porta
-                        felis euismod semper. Fusce dapibus tellus cursus.
-                      </p>
-
-                      <a href="#" class="btn-text" style="color: #3f78e0">
-                        <span class="span">See Project</span>
-
-                        <ion-icon
-                          name="arrow-forward-outline"
-                          aria-hidden="true"
-                        ></ion-icon>
-                      </a>
-                    </div>
-                    <div class="col-lg-4">
-                      <img
-                        src="./assets/images/project-private-edu.png"
-                        loading="lazy"
-                        alt="Web Design"
-                        class="w-100"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!-- end project second -->
-
-              <li>
-                <div
-                  class="project-card project-card-3"
-                  style="background-color: #f5faf7"
-                >
-                  <div class="card-content" data-reveal="left">
-                    <p class="card-tag" style="color: #7cb798">Web Design</p>
-
-                    <h3 class="h3 card-title">Missio Theme</h3>
-
-                    <p class="card-text">
-                      Maecenas faucibus mollis interdum sed posuere porta
-                      consectetur cursus porta lobortis. Scelerisque id ligula
-                      felis.
-                    </p>
-
-                    <a href="#" class="btn-text" style="color: #7cb798">
-                      <span class="span">See Project</span>
-
-                      <ion-icon
-                        name="arrow-forward-outline"
-                        aria-hidden="true"
-                      ></ion-icon>
-                    </a>
-                  </div>
-
-                  <figure class="card-banner" data-reveal="right">
-                    <img
-                      src="./assets/images/project-3.png"
-                      width="600"
-                      height="367"
-                      loading="lazy"
-                      alt="Web Design"
-                      class="w-100"
-                    />
-                  </figure>
-                </div>
-              </li>
-
-              <li>
-                <div
-                  class="project-card project-card-4"
-                  style="background-color: #fcf4f6"
-                >
-                  <div class="card-content" data-reveal="left">
-                    <p class="card-tag" style="color: #d16b86">Mobile Design</p>
-
-                    <h3 class="h3 card-title">Storage App</h3>
-
-                    <p class="card-text">
-                      Maecenas faucibus mollis interdum sed posuere consectetur
-                      est at lobortis. Scelerisque id ligula porta felis euismod
-                      semper.
-                    </p>
-
-                    <a href="#" class="btn-text" style="color: #d16b86">
-                      <span class="span">See Project</span>
-
-                      <ion-icon
-                        name="arrow-forward-outline"
-                        aria-hidden="true"
-                      ></ion-icon>
-                    </a>
-                  </div>
-
-                  <figure class="card-banner" data-reveal="right">
-                    <img
-                      src="./assets/images/project-4.png"
-                      width="620"
-                      height="370"
-                      loading="lazy"
-                      alt="Mobile Design"
-                      class="w-100"
-                    />
-                  </figure>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- 
-        - #CONTACT
-      -->
-
-        <section class="section contact" aria-label="contact" id="contact">
-          <div class="container">
-            <div class="card border-0" style="background-color: #fcf4f6">
-              <div class="card-body p-5 m-5">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col-lg-4">
-                    <div class="card-icon">
-                      <img
-                        src="./assets/images/icon-5.svg"
-                        width="44"
-                        height="44"
-                        loading="lazy"
-                        alt="envelop icon"
-                      />
-                    </div>
-
-                    <h2 class="h2 section-title mb-5">
-                      If you like what you see, let's work together.
-                    </h2>
-                    <div class="d-flex align-items-center gap-3">
-                      <a
-                        href="mailto:desi.rf27@gmail.com
-                      ?subject=Hello%20Desi"
-                      >
-                        <i class="bx bxl-gmail h1 text-primary"></i>
-                      </a>
-                      <p class="mb-0 fs-2 text-primary">desi.rf27@gmail.com</p>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="https://wa.me/083827254252" target="_blank">
-                        <i class="bx bxl-whatsapp h1 text-primary"></i>
-                      </a>
-                      <p class="mb-0 fs-2 text-primary">+62 8382 7254 252</p>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a
-                        href="https://www.linkedin.com/in/desiramadha27/"
-                        target="_blank"
-                      >
-                        <i class="bx bxl-linkedin h1 text-primary"></i>
-                      </a>
-                      <p class="mb-0 fs-2 text-primary">
-                        Desi Ramadha Fitriani
-                      </p>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a
-                        href="https://www.instagram.com/desiramadhaaa/"
-                        target="_blank"
-                      >
-                        <i class="bx bxl-instagram h1 text-primary"></i>
-                      </a>
-                      <p class="mb-0 fs-2 text-primary">desiramadhaaa</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7588.383254416864!2d110.31668430649462!3d-7.821434155355077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af8123af578eb%3A0x4027a76e352fc60!2sKasihan%2C%20Kec.%20Kasihan%2C%20Kabupaten%20Bantul%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1716881985327!5m2!1sid!2sid"
-                      width="100%"
-                      height="700"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                  <div class="col-lg-3">
-                    <blockquote
-                      class="instagram-media"
-                      data-instgrm-captioned
-                      data-instgrm-permalink="https://www.instagram.com/p/CrsBqBALt6r/?utm_source=ig_embed&amp;utm_campaign=loading"
-                      data-instgrm-version="14"
-                      style="
-                        background: #fff;
-                        border: 0;
-                        border-radius: 3px;
-                        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
-                          0 1px 10px 0 rgba(0, 0, 0, 0.15);
-                        margin: 1px;
-                        max-width: 540px;
-                        padding: 0;
-                        width: 99.375%;
-                        width: -webkit-calc(100% - 2px);
-                        width: calc(100% - 2px);
-                      "
-                    >
-                      <div style="padding: 16px">
-                        <a
-                          href="https://www.instagram.com/p/CrsBqBALt6r/?utm_source=ig_embed&amp;utm_campaign=loading"
-                          style="
-                            background: #ffffff;
-                            line-height: 0;
-                            padding: 0 0;
-                            text-align: center;
-                            text-decoration: none;
-                            width: 100%;
-                          "
-                          target="_blank"
-                        >
-                          <div
-                            style="
-                              display: flex;
-                              flex-direction: row;
-                              align-items: center;
-                            "
-                          >
-                            <div
-                              style="
-                                background-color: #f4f4f4;
-                                border-radius: 50%;
-                                flex-grow: 0;
-                                height: 40px;
-                                margin-right: 14px;
-                                width: 40px;
-                              "
-                            ></div>
-                            <div
-                              style="
-                                display: flex;
-                                flex-direction: column;
-                                flex-grow: 1;
-                                justify-content: center;
-                              "
-                            >
-                              <div
-                                style="
-                                  background-color: #f4f4f4;
-                                  border-radius: 4px;
-                                  flex-grow: 0;
-                                  height: 14px;
-                                  margin-bottom: 6px;
-                                  width: 100px;
-                                "
-                              ></div>
-                              <div
-                                style="
-                                  background-color: #f4f4f4;
-                                  border-radius: 4px;
-                                  flex-grow: 0;
-                                  height: 14px;
-                                  width: 60px;
-                                "
-                              ></div>
-                            </div>
-                          </div>
-                          <div style="padding: 19% 0"></div>
-                          <div
-                            style="
-                              display: block;
-                              height: 50px;
-                              margin: 0 auto 12px;
-                              width: 50px;
-                            "
-                          >
-                            <svg
-                              width="50px"
-                              height="50px"
-                              viewBox="0 0 60 60"
-                              version="1.1"
-                              xmlns="https://www.w3.org/2000/svg"
-                              xmlns:xlink="https://www.w3.org/1999/xlink"
-                            >
-                              <g
-                                stroke="none"
-                                stroke-width="1"
-                                fill="none"
-                                fill-rule="evenodd"
-                              >
-                                <g
-                                  transform="translate(-511.000000, -20.000000)"
-                                  fill="#000000"
-                                >
-                                  <g>
-                                    <path
-                                      d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
-                                    ></path>
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </div>
-                          <div style="padding-top: 8px">
-                            <div
-                              style="
-                                color: #3897f0;
-                                font-family: Arial, sans-serif;
-                                font-size: 14px;
-                                font-style: normal;
-                                font-weight: 550;
-                                line-height: 18px;
-                              "
-                            >
-                              Lihat postingan ini di Instagram
-                            </div>
-                          </div>
-                          <div style="padding: 12.5% 0"></div>
-                           
-                        </p>
-                      </div>
-                    </blockquote>
-                    <script async src="//www.instagram.com/embed.js"></script>
-                  </div>
-                </div>
-              </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
-        </section>
-      </article>
-    </main>
-
-    <!-- 
-    - #FOOTER
-  -->
-
-    <footer class="footer">
-      <div class="container">
-        <p class="copyright">
-          © 2024 Portofolio Desi Ramadha . All rights reserved.
-        </p>
-
-        <ul class="social-list">
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
+      <!-- end modal edu-private -->
+      <!-- end private edu -->
+
+      <div class="card project-1 mb-4 border-0" data-aos="fade-up">
+        <div class="card-body p-5">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 p-5">
+              <h6 class="text-p-1" data-aos="fade-up">MOBILE DESIGN</h6>
+              <h3 class="my-3 text-charcoal" data-aos="fade-up">
+                User Experience (UX) untuk Aplikasi "Fight Stunting"
+              </h3>
+              <p class="text-secondary" data-aos="fade-up">
+                Aplikasi ini bertujuan untuk menyediakan sumber daya, informasi,
+                dan alat untuk memerangi stunting pada anak-anak, khususnya di
+                wilayah dimana masalah ini sering terjadi.
+              </p>
+              <a
+                href=""
+                class="text-decoration-none text-p-1"
+                data-bs-toggle="modal"
+                data-bs-target="#project-stunting"
+                >See Project >></a
+              >
+            </div>
+            <div class="col-lg-5">
+              <img
+                src="./assets/img/project-fight-stunting.png"
+                class="rounded w-100"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal stunting -->
+      <div
+        class="modal fade"
+        id="project-stunting"
+        tabindex="-1"
+        aria-labelledby="project-stunting"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Fight Stunting
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h1>Case Study : Aplikasi "Fight Stunting"</h1>
+              <h5>My Role : User Experience (UX)</h5>
+              <h5>Tools : Figma</h5>
+              <img
+                src="./assets/img/project-fight-stunting.png"
+                class="rounded w-100"
+                alt=""
+              />
+              <h5>Overview</h5>
+              <p class="text-secondary">
+                Tujuan penelitian UX ini adalah untuk mengumpulkan wawasan
+                tentang kebutuhan, perilaku, dan permasalahan pengguna yang
+                terkait dengan aplikasi "Fight Stunting". Aplikasi ini bertujuan
+                untuk menyediakan sumber daya, informasi, dan alat untuk
+                memerangi stunting pada anak-anak, khususnya di wilayah dimana
+                masalah ini sering terjadi.
+              </p>
+
+              <h5>Cakupan:</h5>
+              <p class="text-secondary">
+                Penelitian ini akan mencakup wawancara pengguna, survei,
+                pengujian kegunaan, dan analisis kompetitif untuk
+                menginformasikan desain dan pengembangan aplikasi.
+              </p>
+              <h5>Pertanyaan Penelitian</h5>
+              <ul>
+                <li class="text-secondary">
+                  Apa tantangan utama yang dihadapi orang tua dan pengasuh dalam
+                  mencegah dan menangani stunting pada anak?
+                </li>
+                <li class="text-secondary">
+                  Fitur apa yang menurut pengguna paling berharga dalam aplikasi
+                  yang dirancang untuk memerangi stunting?
+                </li>
+                <li class="text-secondary">
+                  Bagaimana pengguna saat ini mengakses informasi dan sumber
+                  daya tentang gizi dan kesehatan anak?
+                </li>
+                <li class="text-secondary">
+                  Apa masalah kegunaan pada versi aplikasi saat ini (jika
+                  tersedia)?
+                </li>
+                <li class="text-secondary">
+                  Bagaimana cara meningkatkan aplikasi agar dapat memenuhi
+                  kebutuhan dan harapan pengguna dengan lebih baik?
+                </li>
+              </ul>
+              <h5>Metodologi</h5>
+              <p class="text-secondary">Penelitian kualitatif:</p>
+              <h5>Wawancara:</h5>
+              <p class="text-secondary">
+                Mendistribusikan survei online ke audiens yang lebih luas untuk
+                mengumpulkan data tentang preferensi, kebiasaan, dan tantangan
+                pengguna dalam mengatasi stunting.
+              </p>
+              <h5>Survei</h5>
+              <p class="text-secondary">
+                Mendistribusikan survei online ke audiens yang lebih luas untuk
+                mengumpulkan data tentang preferensi, kebiasaan, dan tantangan
+                pengguna dalam mengatasi stunting.
+              </p>
+              <h5>Alat Pengumpul Data</h5>
+              <ul>
+                <li class="text-secondary">
+                  Panduan Wawancara: Panduan terstruktur dengan pertanyaan
+                  terbuka yang disesuaikan dengan kelompok peserta berbeda.
+                </li>
+                <li class="text-secondary">
+                  Alat Survei: Platform survei online Google Formulir.
+                </li>
+                <li class="text-secondary">
+                  Peralatan Perekaman: Alat perekam audio dan video untuk
+                  merekam wawancara dan sesi kegunaan.
+                </li>
+              </ul>
+              <h5>Linimasa</h5>
+              <ul>
+                <li class="text-secondary">
+                  Minggu 1-2: Perencanaan dan persiapan, termasuk perekrutan
+                  peserta dan pembuatan materi penelitian.
+                </li>
+
+                <li class="text-secondary">
+                  Minggu 3-5: Melakukan wawancara, survei, dan kelompok fokus.
+                </li>
+                <li class="text-secondary">
+                  Minggu 6-7: Pengujian kegunaan dan analisis data.
+                </li>
+                <li class="text-secondary">
+                  Minggu 8: Pelaporan dan presentasi.
+                </li>
+              </ul>
+              <h5>Kesimpulan</h5>
+              <p class="text-secondary">
+                Riset UX untuk aplikasi "Fight Stunting" akan memberikan wawasan
+                berharga mengenai kebutuhan dan preferensi pengguna, membantu
+                menciptakan aplikasi yang berpusat pada pengguna yang secara
+                efektif mendukung upaya melawan stunting pada anak-anak. Dengan
+                melibatkan pengguna sebenarnya dalam proses penelitian, kami
+                dapat memastikan aplikasi dapat digunakan dan memberikan dampak.
+              </p>
+              <img src="./assets/img/fight stunting.jpg" alt="" class="w-100" />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal stunting -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card project-3 border-0 h-100" data-aos="fade-up">
+            <div class="card-body p-5">
+              <h6 class="text-p-3" data-aos="fade-up">WEB DESIGN</h6>
+              <h3 class="my-3 text-charcoal" data-aos="fade-up">
+                Website Toko Kue Mami Eci
+              </h3>
+              <p class="text-secondary" data-aos="fade-up">
+                Sebuah Website untuk memesan kue di toko kue mami eci, website
+                ini saya buat untuk memenuhi tugas sertifikasi pelatihan junior
+                web developer yang di selenggarakan oleh kominfo
+              </p>
+              <a
+                href=""
+                class="text-decoration-none text-p-3"
+                data-bs-toggle="modal"
+                data-bs-target="#project-web"
+                >See Project >></a
+              >
+
+              <img
+                src="./assets/img/desain web mama eci.jpg"
+                alt=""
+                class="w-100 mt-5"
+              />
+            </div>
+          </div>
+          <!-- Modal  -->
+          <div
+            class="modal fade"
+            id="project-web"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Website Mama Eci
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h1>Case Study : Website Toko Kue Mama Eci</h1>
+                  <img
+                    src="./assets/img/desain web mama eci.jpg"
+                    class="w-100 mb-3"
+                    alt=""
+                  />
+                  <h5>Overview</h5>
+                  <p class="text-secondary">
+                    Sebuah Website untuk memesan kue di toko kue mami eci,
+                    website ini saya buat untuk memenuhi tugas sertifikasi
+                    pelatihan junior web developer yang di selenggarakan oleh
+                    kominfo
+                  </p>
+                  <h5>Bahasa Yang digunakan</h5>
+                  <ul>
+                    <li class="text-secondary">HTML</li>
+                    <li class="text-secondary">CSS</li>
+                    <li class="text-secondary">PHP</li>
+                  </ul>
+                  <h5>Tools Yang digunakan</h5>
+                  <ul>
+                    <li class="text-secondary">Visual Studio COde</li>
+                    <li class="text-secondary">XAMPP</li>
+                  </ul>
+                  <a
+                    href="https://github.com/DesiRamadha/Web_TokoKue.git"
+                    target="_blank"
+                    class="btn btn-pink px-4"
+                    >Lihat Repository</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card project-4 border-0 h-100" data-aos="fade-up">
+            <div class="card-body p-5">
+              <h6 class="text-p-4" data-aos="fade-up">MOBILE DESIGN</h6>
+              <h3 class="my-3 text-charcoal" data-aos="fade-up">
+                Mock-Up Design for Portal Bimbingan Skripsi Apps
+              </h3>
+              <p class="text-secondary" data-aos="fade-up">
+                Mengembangkan sebuah desain mock-up untuk aplikasi yang
+                memfasilitasi bimbingan skripsi antara mahasiswa dan dosen di
+                Universitas Alma Ata.
+              </p>
+              <a
+                href=""
+                class="text-decoration-none text-p-4"
+                data-bs-toggle="modal"
+                data-bs-target="#project-portal"
+                >See Project >></a
+              >
+
+              <img src="./assets/img/portal.jpg" alt="" class="w-100 mt-5" />
+            </div>
+          </div>
+          <!-- Modal  -->
+          <div
+            class="modal fade"
+            id="project-portal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Aplikasi Portal
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h1>
+                    Case Study : Mock-Up Design for Portal Bimbingan Skripsi
+                    Apps
+                  </h1>
+                  <h5>Tools : Figma</h5>
+                  <img
+                    src="./assets/img/portal.jpg"
+                    class="w-100 mb-3"
+                    alt=""
+                  />
+                  <h5>Overview</h5>
+                  <p class="text-secondary">
+                    Mengembangkan desain mock-up untuk aplikasi yang
+                    memfasilitasi bimbingan skripsi antara mahasiswa dan dosen.
+                  </p>
+                  <h5>Aktivitas Utama :</h5>
+                  <ul>
+                    <li class="text-secondary">
+                      Melakukan analisis kebutuhan pengguna melalui survei dan
+                      wawancara.
+                    </li>
+                    <li class="text-secondary">
+                      Membuat wireframes dan prototype interaktif menggunakan
+                      alat desain Figma.
+                    </li>
+                    <li class="text-secondary">
+                      Mengintegrasikan prinsip-prinsip desain antarmuka pengguna
+                      (UI) dan pengalaman pengguna (UX) untuk menciptakan
+                      pengalaman yang intuitif.
+                    </li>
+                  </ul>
+                  <h5>Design System :</h5>
+                  <img
+                    src="./assets/img/portal-view.jpg"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end project -->
+
+    <div id="contact" class="pt-5">
+      <div class="container mt-5">
+        <div class="card border-0" style="background-color: #fcf4f6">
+          <div class="card-body p-5">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <i class="bx bx-mail-send h1 text-pink"></i>
+                <h1 class="text-charcoal mb-4">
+                  If you like what you see, let's work together.
+                </h1>
+                <div class="d-flex align-items-center gap-3">
+                  <a
+                    href="mailto:desi.rf27@gmail.com
+                  ?subject=Hello%20Desi"
+                  >
+                    <i class="bx bxl-gmail h4 text-pink"></i>
+                  </a>
+                  <p class="mb-1 fs-6 text-pink">desi.rf27@gmail.com</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <a href="https://wa.me/083827254252" target="_blank">
+                    <i class="bx bxl-whatsapp h4 text-pink"></i>
+                  </a>
+                  <p class="mb-1 fs-6 text-pink">+62 8382 7254 252</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <a
+                    href="https://www.linkedin.com/in/desiramadha27/"
+                    target="_blank"
+                  >
+                    <i class="bx bxl-linkedin h4 text-pink"></i>
+                  </a>
+                  <p class="mb-1 fs-6 text-pink">Desi Ramadha Fitriani</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <a
+                    href="https://www.instagram.com/desiramadhaaa/"
+                    target="_blank"
+                  >
+                    <i class="bx bxl-instagram h4 text-pink"></i>
+                  </a>
+                  <p class="mb-1 fs-6 text-pink">desiramadhaaa</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <iframe
+                  width="100%"
+                  height="380px"
+                  class="rounded"
+                  src="https://www.instagram.com/desiramadhaaa/embed/"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light mt-5 p-5">
+      <div class="text-center">&copy; Desi Ramadha Fitriani 2024</div>
     </footer>
-
-    <!-- 
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-
-    <!-- 
-    - ionicon link
-  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
     <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      src="https://kit.fontawesome.com/89104220c0.js"
+      crossorigin="anonymous"
     ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
